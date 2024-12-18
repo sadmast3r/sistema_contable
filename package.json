@@ -1,0 +1,41 @@
+{
+  "name": "conjunto-residencial",
+  "version": "1.0.0",
+  "description": "Sistema de administración para conjunto residencial",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tu-usuario/conjunto-residencial.git"
+  },
+  "keywords": [
+    "administracion",
+    "residencial",
+    "sistema",
+    "gestion"
+  ],
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tu-usuario/conjunto-residencial/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/conjunto-residencial#readme",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "npm run start:backend && npm run start:frontend",
+    "start:backend": "npm workspace backend start",
+    "start:frontend": "npm workspace frontend start",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "npm workspace backend build",
+    "build:frontend": "npm workspace frontend build",
+    "dev": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "npm workspace backend dev",
+    "dev:frontend": "npm workspace frontend start",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "npm workspace backend test",
+    "test:frontend": "npm workspace frontend test"
+  }
+}

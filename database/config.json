@@ -1,0 +1,10 @@
+{
+    "development": {
+      "username": "postgres",
+      "password": "Jose3163642104",
+      "database": "conjunto_residencial",
+      "host": "localhost",
+      "dialect": "postgres",
+      "port": 5432
+    }
+  }
